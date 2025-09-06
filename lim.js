@@ -538,12 +538,18 @@ async function runAllCampaigns() {
     }
     const proxies = loadProxies();
 
-    for (const campaign of CAMPAIGNS) {
+    for (let i = 0; i < CAMPAIGNS.length; i++) {
+        const campaign = CAMPAIGNS[i];
         SELECTED_CAMPAIGN = campaign;
         logger.section(`Starting Campaign: ${campaign.campaign_name}`);
         await runAllAccounts(tokens, proxies);
         logger.success(`Campaign Complete: ${campaign.campaign_name}`);
-        await sleep(5000);
+        
+        if (i < CAMPAIGNS.length - 1) {
+            const delay = 240000; // 4 minutes in milliseconds
+            logger.loading(`Waiting for 4 minutes before the next campaign...`);
+            await sleep(delay);
+        }
     }
 }
 
@@ -627,3 +633,4 @@ if (require.main === module) {
         process.exit(1);
     });
 }
+
