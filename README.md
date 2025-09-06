@@ -10,3 +10,25 @@ Backers: A16z crypto  (tier 1 venture capital).
 🔘 read script and voice recording 
 
 ✅ done 
+
+##Instalaion
+
+```
+git clone
+```
+```
+cd
+```
+```
+npm init -y 
+npm install axios
+npm install dotenv
+```
+```
+nano .env
+```
+~ Run The Script
+
+```
+node lim.js
+```
