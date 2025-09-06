@@ -14,10 +14,10 @@ Backers: A16z crypto  (tier 1 venture capital).
 ##Instalaion
 
 ```
-git clone
+git clone https://github.com/19seniman/psd-ai.git
 ```
 ```
-cd
+cd psd-ai
 ```
 ```
 npm init -y 
