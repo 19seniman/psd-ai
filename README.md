@@ -1,5 +1,4 @@
-🃏POSEIDON AI TESTNET |New Airdrop 
-
+🃏POSEIDON AI TESTNET 
 Funding Raised : 15.00$ M
 Backers: A16z crypto  (tier 1 venture capital).
 
